@@ -1,0 +1,21 @@
+/* target just the middle li (mid-li) from both ol and ul elements */
+.mid-li {
+    background-color: yellow;
+}
+
+/* targeted li element inside ol without ids*/
+ol li {
+    font-size: 20px;
+    background-color: green;
+}
+
+/* it will apply the last styling in the CSS file if it has the same precedence*/
+.another-name {
+    background-color: red;
+}
+
+/* targeting <section id="hobbies"> to change with font color and size */
+#hobbies {
+    color: blue;
+    font-size: 10px;
+}
