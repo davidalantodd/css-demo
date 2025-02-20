@@ -1,6 +1,44 @@
+image {
+    border: 5px solid pink;
+    /* border-style: solid; can style just parts of the border*/ 
+}
+
+ol > li {
+    border-top: 10px dotted blue;
+    border-left: 10px dotted blue;
+    border-right: 10px dotted blue;
+}
+
+ol > li:last-child {
+    border: 10px dotted blue;
+}
+
+ol {
+    display: flex;
+    flex-direction: row;
+    height: 40vh;
+    align-items: last baseline;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: flex-end;
+}
+
+
+
 /* target just the middle li (mid-li) from both ol and ul elements */
 .mid-li {
     background-color: yellow;
+    /* add 10px of padding to left */
+    /*padding: 0 0 0 10px;  this would also work - Top, Right, Bottom, Left*/
+    padding-left: 10px;
+    padding-top: 20px;
+
+    margin-right: 5px;
+    margin-bottom: 10px;
 }
 
 /* targeted li element inside ol without ids*/
